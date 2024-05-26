@@ -15,6 +15,20 @@
     background-repeat: no-repeat;
 }
 
+.about-section {
+    background-image:url(/3.avif);
+    color: white;
+    padding: 50px;
+    height: 100vh;
+    padding-top: 150px;
+    min-height:auto;
+}
+
+.about-section p {
+    border: 3px solid white;
+    font-size: 1.2em;
+    padding: 5px;
+}
 nav {
     display: flex;
     align-items: center;
@@ -25,14 +39,20 @@ nav {
     color: white;
     position: fixed;
     width: 100%;
-    
+    z-index: 10;
 }
+
+
 
 nav ul li {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
     text-transform: uppercase;    
+}
+
+nav ul li a:hover {
+    color:rgb(50, 104, 232);
 }
 
 a {
@@ -48,31 +68,115 @@ nav h2 {
     font-size: 2.3em;
     text-transform: uppercase;
 }
+main {
+    position: relative;
+
+}
+
+.home-section {
+    width: 600px;
+    position: relative;
+    background: linear-gradient(217deg, rgba(26, 25, 36, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(24, 12, 38, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.home-section a {
+    color: rgb(50, 104, 232);   
+}
+.home-section a:hover {
+    color: rgb(108, 139, 211);
+}
+
+.top-container h2 {
+    margin: 10px;
+}
+
+.top-container {
+    position: absolute;
+    bottom: 100px;
+    left: 55px;
+    border: 5px solid rgb(90, 88, 88);
+    width: 400px;
+}
+.top-container a {
+    margin-left: 70px;
+}
+
+.top-container h1 {
+    padding: 10px 10px 10px 30px;
+}
+
+.about-section h1 {
+    font-size: 2em;
+    padding: 1em 0;
+    font-weight: bold;
+}
+.gallery-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-image: url("https://images.unsplash.com/photo-1487715433499-93acdc0bd7c3?q=80&w=3200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 100vh;
+    padding: 5px;
+}
+.gallery-container li{
+    border: 4px solid black;
+    flex-basis: 500px;
+    position: relative;
+}
 
 
+.img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 350px;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
+.img1 {
+    background-image: url(/Jupiter.jpg);
+}
+.img2 {
+    background-image: url(/Flocculent\ spiral.jpg);
+}
+.img3 {
+    background-image: url(/Saturn.jpg);
+}
+.img4 {
+    background-image: url(/Pillars\ of\ creation.jpg);
+}
 
+#gallery-title {
+    position: absolute;
+    bottom: 1220px;
+    left: 100px;
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+footer {
+    height: 20px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.1em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer p {
+    margin-left: 15px;
+}
 
 
 
